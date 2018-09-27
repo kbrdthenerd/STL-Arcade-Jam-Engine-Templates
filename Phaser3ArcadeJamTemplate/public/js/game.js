@@ -1,8 +1,8 @@
 var config = {
   type: Phaser.AUTO,
   parent: 'phaser-example',
-  width: 750,
-  height: 900,
+  width: window.innerWidth,
+  height:  window.innerHeight,
   physics: {
     default: 'arcade',
     arcade: {
@@ -22,6 +22,7 @@ var hasLogged = false
 window.addEventListener("click",function(event){
   event.stopPropagation()
   fullscreen()
+  //game.resize(window.innerWidth, window.innerHeight);
 },false);
 
 

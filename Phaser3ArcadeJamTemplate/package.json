@@ -2,7 +2,8 @@
   "name": "phaser-3-arcade-jam-template",
   "version": "1.0.0",
   "description": "Template for a phaser 3 arcade jam game",
-  "main": "index.js",
+  "private": true,
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -10,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "phaser": "^3.13.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt-compile": "^3.0.0"
   }
 }
